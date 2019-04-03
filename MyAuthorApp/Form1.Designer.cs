@@ -49,6 +49,7 @@
             this.btnAllRecords.TabIndex = 1;
             this.btnAllRecords.Text = "Show All Records";
             this.btnAllRecords.UseVisualStyleBackColor = true;
+            this.btnAllRecords.Click += new System.EventHandler(this.btnSQL_Click);
             // 
             // FrmDatabase
             // 
@@ -59,6 +60,7 @@
             this.Controls.Add(this.grdBooks);
             this.Name = "FrmDatabase";
             this.Text = "Book Database";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFormClosing);
             this.Load += new System.EventHandler(this.FrmDatabase_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdBooks)).EndInit();
             this.ResumeLayout(false);
