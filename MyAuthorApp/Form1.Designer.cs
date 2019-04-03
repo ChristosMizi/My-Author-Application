@@ -36,9 +36,9 @@
             // grdBooks
             // 
             this.grdBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdBooks.Location = new System.Drawing.Point(26, 12);
+            this.grdBooks.Location = new System.Drawing.Point(12, 12);
             this.grdBooks.Name = "grdBooks";
-            this.grdBooks.Size = new System.Drawing.Size(748, 284);
+            this.grdBooks.Size = new System.Drawing.Size(762, 284);
             this.grdBooks.TabIndex = 0;
             // 
             // btnAllRecords
@@ -54,11 +54,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(790, 450);
             this.Controls.Add(this.btnAllRecords);
             this.Controls.Add(this.grdBooks);
             this.Name = "FrmDatabase";
             this.Text = "Book Database";
+            this.Load += new System.EventHandler(this.FrmDatabase_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdBooks)).EndInit();
             this.ResumeLayout(false);
 
